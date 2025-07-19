@@ -1,27 +1,26 @@
 import java.util.*;
-public class swap {
-    public static void swap(int a ,int b){
-        int temp = a;
-        a = b;
-        b = temp;
-        System.out.println("The two numbers after swaping are a :"+a +" and "+b);
-
-    }
-    public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-
-    System.out.println("Enter two number to swap :");
-    System.out.println("Enter the value of a :");
-    int a = sc.nextInt();
-    System.out.println("Enter the value of b :");
-    int b = sc.nextInt();
-    System.out.println("The two numbers before swaping are a :"+a+" and b :"+b);
-    swap(a,b);
-
-    
-    
-
-     
-    
-    }
+public class swap
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+        int sum = 0;
+		System.out.println("Enter the number to perform numbers ");
+		System.out.print("Enter the size of the array :");
+		int size = sc.nextInt();
+		int arr[] = new int[size];
+        
+        System.out.println("Enter "+size+" numbers :");
+        if(size == arr.length){
+            for(int i = 0; i <= arr.length - 1; i++){
+                arr[i] = sc.nextInt();
+        }
+        }
+        for(int i = 0; i <arr.length; i++){
+            sum+=arr[i];
+        }
+        System.out.println("sum " +sum);
+       
+		
+	}
 }
+
