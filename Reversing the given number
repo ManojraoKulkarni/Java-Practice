@@ -1,0 +1,24 @@
+import java.util.*;;
+public class rsm {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int revnum = 0;
+
+        // taking the input from the user
+        System.out.print("Enter the number to get reverse :");
+        int num = sc.nextInt();
+       
+        //printing the original number
+       System.out.println("Entered original number is "+num);
+
+        //reversing
+     while( num > 0){
+        revnum = num % 10 + revnum * 10;
+        num /= 10;
+
+     }
+     //printing the reversed number
+        System.out.print("The number after reversing is "+revnum);
+    }
+    
+}
