@@ -1,0 +1,19 @@
+import java.util.*;
+public class sonn {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the natural number :");// taking the input from the user
+        int num = sc.nextInt();
+
+        if(num > 0){// checking for the +ve number
+            int sum = num * (num + 1)/2;// calculating the +ve number
+            
+            System.out.print("The sum is :"+sum); // printing the sum
+        }else{
+            System.out.println("Enter the +ve number");
+        }
+        
+    }
+    
+}
+   
